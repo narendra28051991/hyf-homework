@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week-3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <form action="#">
+
+            <div class="payment">
+
+                <div class="heading">
+                    <h1>Order Summary</h1>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$333 / month</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <h2>Payment Method</h2>
+                    <div class="mode">
+                        <input type="radio" id="first" name="radios">
+                        <label for="first" class="visa">
+                            <img src="cards.png" alt="all cards">
+                            <p>Credit / Debit</p>
+                        </label>
+                        <input type="radio" id="second" name="radios">
+                        <label for="second" class="paypal">
+                            <img src="paypal.png" alt="paypal method">
+                            <p>PayPal</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <h2>Card Info</h2>
+                    <div class="details">
+                        <div class="number">
+                            <span>Card Number</span>
+                            <input  type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19"
+                                placeholder="1234 1234 1234 1234" required>
+                        </div>
+
+                        <div class="date">
+                            <span>Expiry date</span>
+                            <input type="number" pattern="[0-1]{1}[0-9]{1}/[2-9]{1}[3-9]{1}"
+                                placeholder="MM/YY" required>
+                        </div>
+
+                        <div class="code">
+                            <span>Security code</span>
+                            <input type="number" pattern="\d{3}|\d{8}"
+                            placeholder="CVV" required>
+                        </div>
+
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit">Buy Now</button>
+                        <a href="#">
+                            <h3>Need Help?</h3>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
