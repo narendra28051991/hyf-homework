@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 3em;
+    color: #150E56;
+}
+.info h3 {
+    margin-bottom: 20px;
+}
+h2 {
+    color: #7B113A;
+    border-bottom: 5px solid #7B113A;
+}
+h3 {
+    color: #7B113A;
+}
+p, li {
+    color: #362222;
+}
+.resume {
+    position: relative;
+}
+
+/* Name and Title */
+.personal-info {
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+/* Contact Information */
+.details {
+    position: relative;
+}
+.contact-info ul {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    margin-bottom: 5px;
+}
+.contact-info ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+.contact-info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #171010;
+}
+.details .image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.details .image img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 13%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+/* The Entire Container */
+.container {
+    position: relative;
+    width: 100%;
+    min-width: 1250px;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .left-side, .container .right-side {
+    position: relative;
+    padding: 5px 10px;
+}
+
+/* Experience */
+.experience, .experience .box, .experience .box .role, .experience .box .text {
+    position: relative;
+}
+.experience .box {
+    margin: 20px auto;
+}
+.experience .box .role {
+    margin: 10px auto;
+}
+.experience .box .text ul {
+    margin: 20px auto;
+}
+.experience .box .text ul li {
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+.experience .box .role p {
+    font-size: 1em;
+}
+.experience .box .role p span {
+    color: #7B113A;
+    font-weight: 600;
+}
+div.left-side > div > div:nth-child(4) > div.text > ul {
+    font-weight: 600;
+}
+
+/* Education */
+.education {
+    position: relative;
+}
+.education li {
+    position: relative;
+    list-style: none;
+    margin: 10px auto;
+    font-style: 0.9em;
+}
+.education ul li p:nth-child(1) {
+    font-weight: 600;
+}
+
+/* Strengths and Skill Set */
+.strengths {
+    position: relative;
+    margin: 30px auto;
+}
+.strengths .skill {
+    margin: 20px auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+.strengths .skill p {
+    font-size: 0.9em;
+    color: #171010;
+    font-weight: 600;
+}
+.strengths .skill .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #E9EEC9;
+}
+.strengths .skill .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #7B113A;
+}
+
+/* Acheivements */
+.acheivements ul {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px auto;
+}
+.acheivements ul li {
+    margin: 9px 0;
+    font-size: 1em;
+    color: #171010;
+    font-weight: 600;
+}
+.acheivements ul li .icon {
+    width: 40px;
+    font-size: 25px;
+}
