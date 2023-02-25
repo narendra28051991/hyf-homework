@@ -43,6 +43,10 @@ h2 {
     width: 30px;
     padding-top: 20px;
 }
+.mode span {
+    display: block;
+    margin: 10px auto;
+}
 .visa img {
     width: 150px;
 }
@@ -80,9 +84,6 @@ button {
     border-radius: 50px;
     color: #FFF;
     font-size: 18px;
-}
-.submit a {
-    text-decoration: none;
 }
 h3 {
     font-size: 15px;
@@ -124,7 +125,13 @@ h3 {
     .mode {
         font-size: 12px;
     }
-    .mode img {
-        width: 30%;
+    .visa img {
+        width: 70%;
+    }
+    .paypal img {
+        width: 15%;
+    }
+    .mode span {
+        margin: 15px auto;
     }
 }
