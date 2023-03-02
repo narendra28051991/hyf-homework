@@ -1,1 +1,1 @@
-console.log("Javascript week1")
+console.log("Javascript week1\n\n")
