@@ -32,5 +32,5 @@ function getNumberOfStudents() {
 }
 
 console.log(`Length of the class: ${getNumberOfStudents()}`);
-console.log("\nList of students in the class:");
+console.log("List of students in the class:");
 console.log(class07Students.join("\n"));

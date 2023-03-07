@@ -31,13 +31,20 @@ function canBuyMoreCandy() {
     }
 
     if (amountRemaining > amountToSpend) {
-        console.log("You can buy more, so please do!");
+        return "You can buy more, so please do!";
     } else {
-        console.log("Enough candy for you!")
+        return "Enough candy for you!";
     }
 }
 
-console.log("Your purchase:")
-addCandy("Toffee", 500)
-addCandy("Sweet", 500)
-canBuyMoreCandy()
+alert("Note!\nPlease order the candies in grams!!");
+console.log("Your purchase:");
+const sweet = +prompt("Sweet candy:");
+addCandy("Sweet", sweet)
+const chocolate = +prompt("Chocolate candy:");
+addCandy("Chocolate", chocolate)
+const toffee = +prompt("Toffee candy:");
+addCandy("Toffee", toffee)
+const chewing_gum = +prompt("Chewing-gum candy:");
+addCandy("Chewing-gum", chewing_gum)
+console.log(canBuyMoreCandy())
