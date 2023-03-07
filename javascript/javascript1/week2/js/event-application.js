@@ -9,4 +9,6 @@ function getEventWeekday(daysFromToday) {
     const eventWeekday = weekday[eventDay];
     return `Today is ${weekday[today.getDay()]} and the event is in ${daysFromToday} days.\nTherefore the event will be held on a ${eventWeekday}.\n\n`
 }
-console.log(getEventWeekday(23));
+
+const daysToEvent = +prompt("Please specify how many days from today an event is being held?")
+console.log(getEventWeekday(daysToEvent));

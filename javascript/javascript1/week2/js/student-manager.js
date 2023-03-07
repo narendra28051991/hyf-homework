@@ -22,20 +22,15 @@ function addStudentToClass(studentName) {
     }
 }
 
-addStudentToClass('Mario')
-addStudentToClass('Yoshi')
-addStudentToClass('Luigi')
-addStudentToClass('Peach')
-addStudentToClass('Anna')
-addStudentToClass('Mario')
-addStudentToClass('')
-addStudentToClass('Candy')
-addStudentToClass('Ninja')
-addStudentToClass('queen')
+for (let input = 0; input < 10; input++) {
+    let userName = prompt(`Enter the student name ${input + 1}: `);
+    addStudentToClass(userName.toLowerCase());
+}
 
 function getNumberOfStudents() {
     return class07Students.length;
 }
 
 console.log(`Length of the class: ${getNumberOfStudents()}`);
-console.log(class07Students);
+console.log("\nList of students in the class:");
+console.log(class07Students.join("\n"));

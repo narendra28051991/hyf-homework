@@ -15,5 +15,5 @@ function weatherWear(temperature) {
     }
 }
 
-const clothesToWear = weatherWear(18);
-console.log(`It's ${clothesToWear} weather in Denmark.\n\n`);
+const weatherOutside = +prompt("What is the temperature outside?");
+console.log(`It's ${weatherWear(weatherOutside)} weather in Denmark.\n\n`);
