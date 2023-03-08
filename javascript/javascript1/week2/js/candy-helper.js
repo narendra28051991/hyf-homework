@@ -26,8 +26,20 @@ const amountToSpend = Math.floor(Math.random() * 100)
 function canBuyMoreCandy() {
     let amountRemaining = 0
 
-    for(let candy = 0; candy < boughtCandyPrices.length; candy++) {
+    // for(let candy = 0; candy < boughtCandyPrices.length; candy++) {
+    //     amountRemaining += boughtCandyPrices[candy];
+    // }
+
+    // if (amountRemaining > amountToSpend) {
+    //     return "You can buy more, so please do!";
+    // } else {
+    //     return "Enough candy for you!";
+    // }
+
+    let candy = 0; 
+    while (candy < boughtCandyPrices.length) {
         amountRemaining += boughtCandyPrices[candy];
+        candy++;
     }
 
     if (amountRemaining > amountToSpend) {
