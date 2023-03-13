@@ -1,4 +1,4 @@
-console.log("\nWhen will we be there??\n\n");
+console.log("\n\n\nWHEN WILL WE BE THERE??\n\n");
 
 const travelInformation = {
     speed: 50,

@@ -1,4 +1,4 @@
-console.log("\nSeries duration of my life\n\n");
+console.log("\n\n\nSERIES DURATION OF MY LIFE\n\n");
 
 const seriesDurations = [
     {

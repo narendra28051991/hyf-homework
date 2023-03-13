@@ -1,4 +1,4 @@
-console.log("\nNOnoN0nOYes (Note taking app)\n\n");
+console.log("\n\n\nNOnoN0nOYes (NOTE TAKING APP)\n\n");
 
 const notes = [];
 

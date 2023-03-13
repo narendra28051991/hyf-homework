@@ -1,4 +1,4 @@
-console.log("Item array removal\n");
+console.log("ITEM ARRAY REMOVAL\n");
 
 const names = [
     "Peter",
