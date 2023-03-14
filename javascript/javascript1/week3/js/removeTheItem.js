@@ -8,7 +8,7 @@ const names = [
     "Rasmus",
     "Samuel",
     "katrine",
-    "Tala",
+    "Tala"
 ];
 const nameToRemove = "Ahmad";
 const indexToRemove = names.indexOf(nameToRemove);

@@ -11,11 +11,7 @@ function sumOfNumbers() {
     function sumOfEven() {
         let sum = 0;
         for (let index = 0; index < arrayOfNumbers.length; index++) {
-            if (arrayOfNumbers[index] % 2 === 0) {
-                sum += arrayOfNumbers[index];
-            } else {
-                sum += 0;
-            }
+            arrayOfNumbers[index] % 2 === 0 ? sum += arrayOfNumbers[index] : sum += 0;
         }
         return sum;
     }
