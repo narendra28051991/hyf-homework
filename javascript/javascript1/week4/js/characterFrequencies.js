@@ -17,6 +17,7 @@ function getCharacterFrequencies(string) {
     }
 
     const characters = []
+    let sumOfCharacters = 0;
 
     if (charactersArray.length === countsArray.length) {
         for (let index = 0; index < charactersArray.length; index++) {
@@ -25,13 +26,15 @@ function getCharacterFrequencies(string) {
                     character: charactersArray[index],
                     count: countsArray[index]
                 }
-            );        
+            );
+            sumOfCharacters += countsArray[index];
         }
-    } else {
+
+        return { characters, length: sumOfCharacters }
+    }
+    else {
         console.log("There is an error in the code");
     }
-
-    return characters
 }
 
 console.log(getCharacterFrequencies('happy'));
