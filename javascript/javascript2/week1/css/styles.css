@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #DA0037;
+}
+
+.topnav h1 {
+    color: #EDEDED;
+    text-align: center;
+    padding: 14px 16px;
+    text-transform: uppercase;
+}
+
+.topnav h1:hover {
+    color: #444444;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    background-color: #EDEDED;
+    color: #DA0037;
+    padding: 30px;
+}
+
+.content h2 {
+    display: inline-block;
+    color: #444444;
+    border-bottom: 5px solid #171717;
+}
+
+/* Homework */
+.inner-div, .courses {
+    width: 50%;
+    margin: 40px auto;
+    padding: 10px 40px;
+    color: #23425F;
+    background: #FFF;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.courses {
+    text-align: left;
+}
+
+.courses ul {
+    list-style: none;
+}
+
+.courses ul li {
+    margin: 10px 0;
+    padding: 10px 0;
+    color: #A64942;
+}
+
+.courses ul li p:nth-child(1) {
+    font-weight: bold;
+    color: #23425F;
+}
+
+.courses ul li p:nth-child(2)::after {
+    content: " kr";
+}
+
+/* Input field */
+input[type = text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    color: #A64942;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #EDEDED;
+}
+
+#hover, #type, #click {
+    cursor: pointer;
+}
+
+.label {
+    margin-right: 20px;
+    color: #A64942;
+}
+
+/* Buttons */
+button {
+    border: none;
+    background-color: #23425F;
+    color: #FFF;
+    margin: 15px auto;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A64942;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Footer */
+.footer {
+    background-color: #444444;
+    color: #EDEDED;
+    padding: 10px;
+}
