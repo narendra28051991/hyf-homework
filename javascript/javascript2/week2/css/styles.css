@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #E7B10A;
+    font-weight: bold;
+}
+
+/* Top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #77037B;
+}
+
+.topnav h1 {
+    color: #FFF3E2;
+    text-align: center;
+    padding: 14px 16px;
+    text-transform: uppercase;
+}
+
+.topnav h1:hover {
+    color: #009FBD;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    background-color: #FFF3E2;
+    color: #77037B;
+    padding: 30px;
+}
+
+.content h2 {
+    display: inline-block;
+    color: #009FBD;
+    border-bottom: 5px solid #171717;
+}
+
+/* Homework */
+.form, .sort {
+    margin-left: 20px;
+}
+
+.courses {
+    width: 50%;
+    margin: 40px auto;
+    padding: 10px 40px;
+    color: #210062;
+    background: #FFF;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.courses {
+    text-align: left;
+}
+
+.courses ul {
+    list-style: none;
+}
+
+.courses ul li {
+    margin: 10px 0;
+    padding: 10px 0;
+    color: #454545;
+}
+
+.courses ul li p:nth-child(1) {
+    font-weight: bold;
+    color: #210062;
+}
+
+.courses ul li p:nth-child(2)::after {
+    content: " kr";
+}
+
+/* Input field */
+input[type = radio] {
+    cursor: pointer;
+}
+
+input[type = text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    color: #454545;
+    border: 1px solid #FFF3E2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+.label {
+    margin-right: 20px;
+    color: #454545;
+}
+
+/* Sort options */
+span {
+    color: #210062;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+span:hover {
+    color: #009FBD;
+}
+
+/* Footer */
+.footer {
+    background-color: #009FBD;
+    color: #FFF3E2;
+    padding: 10px;
+}
