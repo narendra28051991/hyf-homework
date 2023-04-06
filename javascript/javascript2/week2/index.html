@@ -5,9 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Javascript 2</h1>
-    <script src="js/main.js"></script>
+    <div class="topnav">
+        <h1>Javascript - 2</h1>
+    </div>
+    
+    <div class="content">
+        <h2>Homework Topics </h2>
+
+        <div class="homework">
+            <h3>Doubling of number</h3>
+        </div>
+
+        <div class="homework">
+            <h3>Working with movies</h3>
+        </div>
+
+        <div class="homework">
+            <h3>HyfBay - get the okay'est products here - continued</h3>
+            <div class="form">
+                <p class="info">Filter by: </p>
+
+                <form action="" id="options">
+                    <input type="radio" name="option" value="minPrice" id="minPrice">
+                    <label for="minPrice" class="label">minPrice</label>
+
+                    <input type="radio" name="option" value="name" id="name">
+                    <label for="name" class="label">name</label>
+
+                    <input type="radio" name="option" value="maxPrice" id="maxPrice">
+                    <label for="maxPrice" class="label">maxPrice</label>
+                </form>
+            </div>
+        </div>
+
+        <div class="homework">
+            <input type="text" class="user" placeholder="Enter your option">
+
+            <div class="sort">
+                <p class="info">Sort by:
+                    <span class="title">title</span>
+                    <span class="price">price</span>
+                    <span class="rating">rating</span>
+                </p>
+            </div>
+    
+            <div class="courses"></div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2023 HackYourFuture</p>
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/doublingNumber.js"></script>
+    <script src="js/movies/moviesList.js"></script>
+    <script src="js/movies/movies.js"></script>
+    <script src="js/hyfBay/hyfBayHelpers.js"></script>
+    <script src="js/hyfBay/main.js"></script>
 </body>
 </html>
