@@ -123,3 +123,17 @@ span:hover {
     color: #FFF3E2;
     padding: 10px;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 750px) {
+    .courses {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .courses {
+        width: 80%;
+        padding: 10px 10px;
+    }
+}
