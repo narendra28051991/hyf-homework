@@ -41,6 +41,14 @@ follower.style.color = '#F5E9CF'
 
 const coordinates = []
 
+Array.prototype.sum = function() {
+    return this.reduce((a, b) => a + b, 0)
+}
+
+Array.prototype.avg = function() {
+    return this.sum() / this.length
+}
+
 document.addEventListener('mousemove', (event) => {
     const x_axis = event.clientX
     const y_axis = event.clientY
@@ -50,17 +58,9 @@ document.addEventListener('mousemove', (event) => {
     coordinates.push({x: x_axis, y: y_axis})
 })
 
-const averagePosition = (coordinates) => {
-    const averageOfCoordinates = () => {
-        const result = coordinates.reduce((a, b) => a + b, 0) / coordinates.length;
-        console.log(result)
-        return result
-    }
-    return averageOfCoordinates;
-}
-
-// setInterval(averagePosition(coordinates), 30000)
-// setInterval(averagePosition(yCoordinates), 30000)
-
-// clearInterval(averagePosition(coordinates))
-// clearInterval(averagePosition(yCoordinates))
+setTimeout(() => {
+    console.log(coordinates)
+    const avgX = coordinates.map(item => item.x).avg()
+    const avgY = coordinates.map(item => item.y).avg()
+    console.log(avgX, avgY)
+}, 5000)
