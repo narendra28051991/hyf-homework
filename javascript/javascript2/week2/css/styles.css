@@ -136,6 +136,7 @@ span:hover {
 }
 
 @media only screen and (max-width: 480px) {
+<<<<<<< HEAD
     input[type = text] {
         width: 80%;
     }
@@ -149,5 +150,10 @@ span:hover {
 @media only screen and (max-width: 320px) {
     #options {
         display: grid;
+=======
+    .courses {
+        width: 80%;
+        padding: 10px 10px;
+>>>>>>> 8dd47943116524a61258492416725e9587a26466
     }
 }
