@@ -4,8 +4,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <script src="js/main.js"></script>
+    <img src="images/currency.png" alt="currency logo" />
+    
+    <div>
+        <h1>Currency Converter</h1>
+        <h2>Live Exchange Rates</h2>
+        <p>Choose the currency and the amounts to get the exchange rate</p>
+    </div>
+    
+    <div class="converter">
+      <div class="currency">
+        <select id="currency-from"></select>
+        <input type="number" id="amount-from" placeholder="0" value="1" />
+      </div>
+
+      <div id="rate"></div>
+
+      <div class="currency">
+        <select id="currency-to"></select>
+        <input type="number" id="amount-to" placeholder="0" />
+      </div>
+    </div>
+
+    <script src="js/currencyCalculator.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
 </body>
 </html>
