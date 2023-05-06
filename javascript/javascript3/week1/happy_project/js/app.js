@@ -23,13 +23,18 @@ const captions = [happyMood, neutralMood, sadMood]
 
 const updateUI = (list, detector) => {
     list.forEach(each => {
-          // remove the d-none class if present
-        if(each.classList.contains('d-none')){
-            each.classList.remove('d-none')
+        if (each !== detector) {
+            if (each.classList.contains('d-none')) {
+                each.classList.remove('d-none')
+            }
+            each.classList.add('d-none')
         }
-        each.classList.add('d-none')
+        else {
+            if (each.classList.contains('d-none')) {
+                each.classList.remove('d-none')
+            }
+        }
     })
-    detector.classList.remove('d-none')
 }
 
 

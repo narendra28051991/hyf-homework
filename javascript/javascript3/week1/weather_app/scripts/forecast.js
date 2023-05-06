@@ -1,4 +1,4 @@
-const key = '	591a6ddeba29f01bc319621d5a5db6db';
+const key = config['weather'];
 const unit = 'metric';
 
 // get weather information

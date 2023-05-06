@@ -5,7 +5,7 @@ const getSentimentAnalysis = async (string) => {
         method: 'POST',
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
-            'X-RapidAPI-Key': 'b31850b089msh0a090a0715c5fa6p111103jsn2d64396051d2',
+            'X-RapidAPI-Key': config['rapidApi'],
             'X-RapidAPI-Host': 'twinword-sentiment-analysis.p.rapidapi.com'
         },
             body: new URLSearchParams({

@@ -1,4 +1,4 @@
-const key = 'QzUctPU0UF6zOA8s9OQGXG9EaXlSJWNv'
+const key = config['giphy']
 
 const getGiphies = async (input, limit) => {
   
