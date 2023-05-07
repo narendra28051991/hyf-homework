@@ -4,9 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div>
+    <!-- <div>
         <button id="one">one</button>
     </div>
     <div>
@@ -17,7 +18,81 @@
     </div>
     <div>
         <h3 id="mouse-position"></h3>
+    </div> -->
+    
+    <div class="topnav">
+        <h1>Javascript - 2</h1>
     </div>
-    <script src="js/main.js"></script>
+    
+    <div class="content">
+        <h2>Homework Topics </h2>
+
+        <div class="homework">
+            <h3>Functions</h3>
+            <div id="functions">
+                <div>
+                    <button id="button">Click</button>
+                </div>
+            
+                <div>
+                    <button id="location">Log location</button>
+                </div>
+            
+                <div>
+                    <p id="latitude"></p>
+                    <p id="longitude"></p>
+                </div>
+            
+                <div>
+                    <a id="link" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="homework">
+            <h3>Function as a variable</h3>
+        </div>
+
+        <div class="homework">
+            <h3>Fastest Presser</h3>
+            <div id="fastest-presser">
+                <div>
+                    <input type="text" id="seconds" placeholder="Seconds">
+                    <button id="start">Start Game</button>
+                </div>
+                <div class="game">
+                    <div class="player-S">
+                        <p>Press S</p>
+                        <p></p>
+                        <canvas id="canvas-S"></canvas>
+                    </div>
+                    <div class="player-L">
+                        <p>Press L</p>
+                        <p></p>
+                        <canvas id="canvas-L"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="result"></h3>
+                    <p id="timer"></p>
+                </div>
+                <div>
+                    <button id="new-game">New Game</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2023 HackYourFuture</p>
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/functions.js"></script>
+    <script src="js/functionAsVariable.js"></script>
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+    <script src="js/fastestPresser.js"></script>
+
 </body>
 </html>
