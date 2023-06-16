@@ -22,12 +22,17 @@ const search_get = (req, res) => {
 }
 
 const search_post = (req, res) => {
-    // assuming this object as response of the body, else we can use req.bodys
-    const fields = {
-        "type": "doc"
-    };
+    const query = req.query.q;
+    const fields = req.body;
+    const length = Object.keys(fields).length;
 
-    if (Object.keys(fields).length !== 0) {
+    if (query && length !== 0) {
+        res.status(404).send("Both query parameter and fields in the body can't be provided.")
+    }
+    else if (query) {
+        res.redirect('/search?q=' + query);
+    }
+    else if (length !== 0) {
         const result = db.filter((object) => {
             return Object.entries(fields).every(([key, value]) => {
               return object[key] === value;
