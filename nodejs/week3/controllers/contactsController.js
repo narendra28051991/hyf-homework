@@ -4,10 +4,8 @@ const contacts = async (req, res) => {
     let query = knex("*").from("contacts");
 
     if ("sort" in req.query && req.query.sort.includes("drop")) {
-      const orderBy = req.query.sort.toString();
-      if (orderBy.length > 0) {
-        query = query.orderByRaw(orderBy);
-      }
+      const requestedSort = req.query.sort;
+      query = query.orderByRaw('?', [requestedSort]);
     }
 
     console.log("SQL", query.toSQL().sql);
