@@ -28,11 +28,15 @@ export default function Home() {
   }, [])
 
   const searchTodo = (e) => {
+      const originalTodos = todos
       e.preventDefault()
       const term = e.target[0].value.trim().toLowerCase()
       const filteredTodos = todos.filter(each => each.todo.includes(term));
       setTodos(filteredTodos)
-      e.target.reset()
+      setTimeout(() => {
+        setTodos(originalTodos)
+        e.target.reset()
+      }, 3000);
   }
 
   const addTodo = async (e) => {
